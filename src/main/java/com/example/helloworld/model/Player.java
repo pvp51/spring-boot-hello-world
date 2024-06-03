@@ -16,7 +16,7 @@ import javax.persistence.Id;
 public class Player {
 
     @Id
-    private String playerID;
+    private String playerId;
     private String birthYear;
     private String birthMonth;
     private String birthDay;

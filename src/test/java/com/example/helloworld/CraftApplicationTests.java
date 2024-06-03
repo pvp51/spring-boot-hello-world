@@ -12,12 +12,12 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 class CraftApplicationTests {
 
     @Autowired
-    private CraftController helloWorldController;
+    private CraftController craftController;
 
     @Test
     void contextLoads() {
         // to ensure that controller is getting created inside the application context
-        assertNotNull(helloWorldController);
+        assertNotNull(craftController);
     }
 
 }

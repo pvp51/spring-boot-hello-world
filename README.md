@@ -18,7 +18,7 @@
 
 
 - **Directly from IDE**
-  <br/>```Right click on HelloWorldApplication.java and click on 'Run' option```
+  <br/>```Right click on CraftApplication.java and click on 'Run' option```
   <br/><br/>
 
 > **Note:** By default spring boot application starts on port number 8080. If port 8080 is occupied in your system then you can change the port number by uncommenting and updating the **server.port** property inside the **application.properties** file that is available inside the **src > main > resources** folder.
@@ -46,6 +46,6 @@
 
 
 - **To run a particular test class**
-  <br/>```mvn -Dtest=HelloWorldControllerTest test```
+  <br/>```mvn -Dtest=CraftControllerTest test```
   <br/>or
-  <br/>```mvn -Dtest=HelloWorldApplicationTests test```
+  <br/>```mvn -Dtest=CraftApplicationTests test```

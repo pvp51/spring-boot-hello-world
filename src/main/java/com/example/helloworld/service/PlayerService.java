@@ -27,7 +27,7 @@ public class PlayerService {
 
 
     // find all records
-    @Cacheable(cacheNames = {"playerCache"}, key = "#playerId")
+    @Cacheable(cacheNames = {"playerCache"})
     public List<Player> getAllPlayers() {
         return repository.findAll();
     }
@@ -38,6 +38,7 @@ public class PlayerService {
         return repository.findById(playerId).get();
     }
 
+    @Cacheable(cacheNames = {"playerCache"})
     @SuppressWarnings({ "rawtypes", "unchecked" })
     private void parseCSV() throws FileNotFoundException {
         String fileName = "/workspaces/spring-boot-hello-world/src/main/resources/Player.csv";
@@ -49,6 +50,7 @@ public class PlayerService {
 
         List<Player> list = csv.parse();
         this.repository.saveAll(list);
+        System.out.println("Total records writtren to the cache: " + this.repository.count());
     }
 
     @SuppressWarnings({"rawtypes", "unchecked"})

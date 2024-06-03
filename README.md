@@ -28,11 +28,11 @@
 **Send an HTTP GET request to '/hello' endpoint using any of the two methods**
 
 - **Browser or REST client**
-  <br/>```http://localhost:8080/hello```
+  <br/>```http://localhost:8080/api/hello```
 
 
 - **cURL**
-  <br/>```curl --request GET 'http://localhost:8080/hello'```
+  <br/>```curl --request GET 'http://localhost:8080/ap/hello'```
 
 
 ## How to Run Unit Test Cases
